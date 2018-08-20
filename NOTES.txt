@@ -1,0 +1,14 @@
+## MERN stack template
+
+## will have following default ability
+- user registration and validation
+- item (profile, edge devices) registration and validation
+- posts - data logged from users / edge devices
+
+## GIT
+Start a new Git repository for an existing code base
+
+               $ cd /path/to/my/codebase
+               $ git init      (1)
+               $ git add .     (2)
+               $ git commit    (3)

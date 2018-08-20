@@ -1,0 +1,32 @@
+version: "3.3"
+
+## container_name is not supported
+
+services:
+  app:
+    build: ./app
+    command: node ./bin/www
+    ports:
+      - "3000:3000"
+    networks:
+      - mern
+
+  db:
+    build: ./db
+    ## location of mounted folder for mongo db data files
+    volumes:
+      - ./db/data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - mern
+
+#  web:
+#    build: ./web
+#    ports:
+#      - "80:80"
+#    networks:
+#      - mern
+
+networks:
+  ? mern

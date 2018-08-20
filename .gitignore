@@ -1,0 +1,4 @@
+app/.env
+app/node_modules
+package-lock.json
+db/data
